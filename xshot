@@ -1,0 +1,4 @@
+#!/bin/bash
+# xshot wrapper: run xshot.py with the local venv created by install.sh.
+cd "$(dirname "$0")"
+exec ./.venv/bin/python ./xshot.py "$@"
